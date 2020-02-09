@@ -35,8 +35,8 @@ class App extends React.Component{
                 */}
                 <Switch>
                   <Route path="/about" component={About}/>
-                  <Route path="/home" component={Home}/>
-                  <Redirect to="/about"/>
+                  <Route path="/home" component={Home} exact/>
+                  <Redirect to="/home"/>
                 </Switch>
               </div>
             </div>
